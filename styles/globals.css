@@ -18,7 +18,7 @@
     }
 
     .div-offset {
-        @apply absolute text-center inset-x-20 -bottom-8 left-6 right-6 bg-white pb-10 rounded p-1
+        @apply absolute text-center inset-x-20 -bottom-8 left-6 right-6 bg-white pb-10 rounded p-1 py-5 mx-auto flex flex-col items-center
     }
 
     .div-bg {

@@ -5,7 +5,7 @@ import { MdRestaurant } from "react-icons/md"
 const features = () => {
   return (
     <>
-        <div className='text-neutral-700 pb-10'>
+        <div id='#features' className='text-neutral-700 pb-10'>
             <div className='text-center'>
                 <h3 className='text-black text-4xl'>Features</h3>
                 <div className='sm:mx-[20%]'>
