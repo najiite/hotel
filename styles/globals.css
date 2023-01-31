@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-family: Raleway, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        @apply text-amber-100;
+      }
+    .lg-navElements {
+      @apply py-3 px-5 font-semibold hover:bg-orange-300 hover:text-white
+    }
+  
+    .sm-navElements {
+      @apply p-5 text-4xl font-semibold hover:border-b-4 border-b-white
+    }
+
+    .div-offset {
+        @apply absolute text-center inset-x-20 -bottom-8 left-6 right-6 bg-white pb-10 rounded p-1
+    }
+
+    .div-bg {
+        @apply relative items-center bg-cover h-96 w-full bg-no-repeat mb-10
+    }
+  
+}
