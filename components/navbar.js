@@ -59,15 +59,20 @@ const Navbar = () => {
                     
                     <ul className="hidden sm:flex ml-10">
                         <motion.li className="lg-navElements"  whileHover={{scale: 1.2}}>
-                            <Link href='/#about'><motion.span>Features</motion.span></Link>
+                            <Link href='/#features'><motion.span>Features</motion.span></Link>
                         </motion.li>
                         <motion.li className="lg-navElements"  whileHover={{scale: 1.2}}>
-                            <Link href='/#projects'>Rooms</Link>
+                            <Link href='/#rooms'>Rooms</Link>
+                        </motion.li>
+                        <motion.li className="lg-navElements"  whileHover={{scale: 1.2}}>
+                            <Link href='/#about'>About Us</Link>
                         </motion.li>
                         <motion.li className="lg-navElements"  whileHover={{scale: 1.2}}>
                             <Link href='/#contact'>Contact</Link>
                         </motion.li>
                     </ul>
+                    <a href='#book' className='hidden sm:flex border border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
+          
                     <div className="sm:hidden block z-10">
                         { nav ? <AiOutlineClose size={20} onClick={HandleNav}  style={{color: `white`}}/> : <AiOutlineMenu size={20}  onClick={HandleNav} />}
                         
@@ -83,13 +88,18 @@ const Navbar = () => {
                             <Link href='/#about'>Features</Link>
                         </motion.li>
                         <motion.li onClick={HandleNav}  className="sm-navElements" variants={listVariant}>
-                            <Link href='/#projects'>Rooms</Link>
+                            <Link href='/#rooms'>Rooms</Link>
+                        </motion.li>
+                        <motion.li onClick={HandleNav}  className="sm-navElements" variants={listVariant}>
+                            <Link href='/#about'>About Us</Link>
                         </motion.li>
                         <motion.li onClick={HandleNav}  className="sm-navElements" variants={listVariant}>
                             <Link href='/#contact'>Contact</Link>
                         </motion.li>
+                        <li className="mt-10">
+                            <a href='#book' className=' sm:hidden text-center border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
+                        </li>
                     </ul>
-
                 </motion.div>
             </div>
         </div>

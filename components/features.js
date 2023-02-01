@@ -7,7 +7,7 @@ const features = () => {
     <>
         <div id='#features' className='text-neutral-700 pb-10'>
             <div className='text-center'>
-                <h3 className='text-black text-4xl'>Features</h3>
+                <h3 className='text-black text-4xl sm:mx-[30%] uppercase'>Discover the ultimate hotel experience at Hotel De Nacka</h3>
                 <div className='sm:mx-[20%]'>
                         
                     <p className='p-5'>Amenities play a significant role in making your stay at our hotel an unforgettable experience. Our hotel is designed to provide a welcoming, clean and comfortable environment that exudes relaxation and comfort. From our well-appointed common areas, attractive landscaping and décor, we aim to make your stay as enjoyable as possible.</p>

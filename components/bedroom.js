@@ -8,7 +8,7 @@ const bedroom = ({title, occupants, bedsize, bath, image}) => {
                 <div class="block bg-white max-w-sm mb-5">
                     <img src={image} className='h-96'/>
                     <div className='p-6 block text-center font-medium text-neutral-700'>
-                        <h5 class="text-xl leading-tight font-medium mb-2 pt-4 border-t-[2px] border-neutral-500">{title}</h5>
+                        <h5 className="text-xl leading-tight font-medium mb-2 pt-4 border-t-[2px] border-neutral-500">{title}</h5>
                         <div className='grid grid-cols-3 gap-8'>
                             <div className='mx-auto flex flex-col items-center'>
                                 <FaUserFriends className='text-center' size={20}/>
