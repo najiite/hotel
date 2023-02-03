@@ -1,9 +1,11 @@
 import Link from "next/link"
-import { useState, useEffect, } from "react"
+import { useState, useEffect, useContext} from "react"
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { motion } from "framer-motion"
+import SiteDetails from "@/scripts/siteDetails"
 
 const Navbar = () => {
+    const {siteName} = useContext(SiteDetails)
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
     const HandleNav = () => {
@@ -54,7 +56,7 @@ const Navbar = () => {
         <div  style={{backgroundColor: `${color}`}} className="fixed top-0 left-0 w-full z-10 ease-in duration-300 border-b-[1px] border-amber-100/20">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 ">
                     <Link className=" mr-5" href='/'>
-                        <h1  className="font-bold text-4xl">Hotel De' Nacka</h1>
+                        <h1  className="font-bold text-4xl">{siteName}</h1>
                     </Link>
                     
                     <ul className="hidden sm:flex ml-10">
@@ -71,7 +73,7 @@ const Navbar = () => {
                             <Link href='/#contact'>Contact</Link>
                         </motion.li>
                     </ul>
-                    <a href='#book' className='hidden sm:flex border border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
+                    <a className='hidden sm:flex border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
           
                     <div className="sm:hidden block z-10">
                         { nav ? <AiOutlineClose size={20} onClick={HandleNav}  style={{color: `white`}}/> : <AiOutlineMenu size={20}  onClick={HandleNav} />}
@@ -102,6 +104,8 @@ const Navbar = () => {
                     </ul>
                 </motion.div>
             </div>
+
+            
         </div>
     </>
   )

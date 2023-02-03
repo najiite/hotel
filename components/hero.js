@@ -1,7 +1,9 @@
-import React from 'react'
+import {useContext} from 'react'
 import { motion } from 'framer-motion';
+import SiteDetails from "@/scripts/siteDetails"
 
 const Hero = () => {
+  const {siteName} = useContext(SiteDetails)
   const textVariant = {
     hidden: {
       y: "5vw",
@@ -30,7 +32,7 @@ const Hero = () => {
                     initial={{  opacity: 0}} 
                     animate={{ opacity: 1}} 
                     transition={{ delay: 1, duration: 5}}>
-                      HOTEL <span className='text-white'>DE</span> NACKA
+                      {siteName}
                 </motion.h2>
                 <p className='text-white font-semibold'>HOSPITALITY DONE RIGHT</p>
             </div>

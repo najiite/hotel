@@ -1,16 +1,22 @@
+import React from 'react'
 import Hero from '@/components/hero'
 import Navbar from '@/components/navbar'
 import Features from '@/components/features'
 import Rooms from '@/components/rooms'
 import Hospitality from '@/components/hospitality'
+import Gallery from '@/components/gallery'
+import Footer from '@/components/footer'
 import Head from 'next/head'
+import SiteDetails, { SiteDetailsProvider } from '@/scripts/siteDetails'
+import { useContext } from 'react'
 
 export default function Home() {
+  const {siteName} = useContext(SiteDetails)
   return (
-    <>
+    <SiteDetailsProvider>
       <Head>
         <title>Hotel Landing Page</title>
-        <meta name="description" content="Hotel Landing Page" />
+        <meta name="description" content="Landing Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -21,7 +27,9 @@ export default function Home() {
         <Features />
         <Rooms />
         <Hospitality />
+        <Gallery />
+        <Footer />
       </div>
-    </>
+    </SiteDetailsProvider>
   )
 }

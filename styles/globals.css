@@ -7,7 +7,7 @@
         scroll-behavior: smooth;
         font-family: Raleway, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        @apply text-amber-100;
+        @apply text-orange-100;
       }
     .lg-navElements {
       @apply py-3 px-5 font-semibold hover:bg-orange-300 hover:text-white
