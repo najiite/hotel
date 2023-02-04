@@ -1,11 +1,12 @@
 
 import {FaBath, FaBed, FaUserFriends } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 
 const bedroom = ({title, occupants, bedsize, bath, image}) => {
   return (
     <>
-                <div className="block bg-white max-w-sm mb-5">
+                <motion.div  initial={{ opacity: 0, y: 400}} whileInView={{ opacity: 1, y:0}} transition={{ duration: 0.5}} className="block bg-white max-w-sm mb-5">
                     <img src={image} className='h-96'/>
                     <div className='p-6 block text-center font-medium text-neutral-700'>
                         <h5 className="text-xl leading-tight font-medium mb-2 pt-4 border-t-[2px] border-neutral-500">{title}</h5>
@@ -26,7 +27,7 @@ const bedroom = ({title, occupants, bedsize, bath, image}) => {
                         </div>
                         <a className="my-5 border-2 border-neutral-600 w-full inline-block py-3 cursor-pointer">Book Now</a>
                     </div>
-                </div>
+                </motion.div>
     </>
   )
 }

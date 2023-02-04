@@ -56,7 +56,7 @@ const Navbar = () => {
         <div  style={{backgroundColor: `${color}`}} className="fixed top-0 left-0 w-full z-10 ease-in duration-300 border-b-[1px] border-amber-100/20">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 ">
                     <Link className=" mr-5" href='/'>
-                        <h1  className="font-bold text-4xl text-orange-300">{siteName}</h1>
+                        <h1  className="font-bold sm:text-4xl text-3xl font-logo text-orange-300">{siteName}</h1>
                     </Link>
                     
                     <ul className="hidden sm:flex ml-10">

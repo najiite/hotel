@@ -7,7 +7,7 @@ const footer = () => {
   return (
     <div>
         <div className='bg-[#000106] sm:flex sm:justify-between mt-10 px-10 py-10'>
-            <p className='font-bold text-3xl pb-5'>{siteName}</p>
+            <p className='font-bold text-3xl font-logo pb-5'>{siteName}</p>
             <div className='text-center flex justify-start sm:justify-evenly pb-5'>
                 <div className='border rounded-full border-orange-100 p-2 mr-2'>
                     <FaEnvelope size={20}/>

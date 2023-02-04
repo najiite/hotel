@@ -28,7 +28,7 @@ const Hero = () => {
                         <span className='font-semibold text-xl'>&nbsp;Welcome to&nbsp;</span>
                 </div>
                 <motion.h2 
-                    className='text-7xl font-bold my-5 text-orange-300' 
+                    className='text-7xl font-bold my-5 font-logo text-orange-300' 
                     initial={{  opacity: 0}} 
                     animate={{ opacity: 1}} 
                     transition={{ delay: 1, duration: 5}}>

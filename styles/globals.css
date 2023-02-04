@@ -5,9 +5,11 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-        font-family: Raleway, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: 'Courgette', cursive;
         @apply text-orange-100;
+      }
+      .font-logo {
+        font-family: 'Megrim', cursive;
       }
     .lg-navElements {
       @apply py-3 px-5 font-semibold hover:bg-orange-300 hover:text-white
