@@ -56,7 +56,7 @@ const Navbar = () => {
         <div  style={{backgroundColor: `${color}`}} className="fixed top-0 left-0 w-full z-10 ease-in duration-300 border-b-[1px] border-amber-100/20">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 ">
                     <Link className=" mr-5" href='/'>
-                        <h1  className="font-bold text-4xl">{siteName}</h1>
+                        <h1  className="font-bold text-4xl text-orange-300">{siteName}</h1>
                     </Link>
                     
                     <ul className="hidden sm:flex ml-10">
@@ -73,7 +73,7 @@ const Navbar = () => {
                             <Link href='/#contact'>Contact</Link>
                         </motion.li>
                     </ul>
-                    <a className='hidden sm:flex border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
+                    <a href="#contact" className='hidden sm:flex text-orange-300 border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
           
                     <div className="sm:hidden block z-10">
                         { nav ? <AiOutlineClose size={20} onClick={HandleNav}  style={{color: `white`}}/> : <AiOutlineMenu size={20}  onClick={HandleNav} />}
@@ -99,7 +99,7 @@ const Navbar = () => {
                             <Link href='/#contact'>Contact</Link>
                         </motion.li>
                         <li className="mt-10">
-                            <a href='#book' className=' sm:hidden text-center border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
+                            <a href='#contact' className=' sm:hidden text-center text-orange-300 border-orange-300 border-2 py-3 px-6 hover:bg-orange-300 hover:text-white cursor-pointer'>Book A Room</a>
                         </li>
                     </ul>
                 </motion.div>

@@ -6,6 +6,7 @@ import Rooms from '@/components/rooms'
 import Hospitality from '@/components/hospitality'
 import Gallery from '@/components/gallery'
 import Footer from '@/components/footer'
+import Contact from '@/components/contact'
 import Head from 'next/head'
 import SiteDetails, { SiteDetailsProvider } from '@/scripts/siteDetails'
 import { useContext } from 'react'
@@ -28,6 +29,7 @@ export default function Home() {
         <Rooms />
         <Hospitality />
         <Gallery />
+        <Contact />
         <Footer />
       </div>
     </SiteDetailsProvider>
